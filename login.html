@@ -51,31 +51,38 @@
 
         <body>
             
-            <form class="row gy-2 gx-3 align-items-center">
-                <div class="col-auto">
-                  <label class="visually-hidden" for="autoSizingInput">Username</label>
-                  <input type="text" class="form-control" id="autoSizingInput" placeholder="Username">
-                </div>
-                <div class="col-auto">
-                  <label class="visually-hidden" for="autoSizingInputGroup">Password</label>
-                  <div class="input-group">
-                    
-                    <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Password">
-                  </div>
-                </div>
             
-                <div class="col-auto">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-                    <label class="form-check-label" for="autoSizingCheck">
-                      Remember me
-                    </label>
-                  </div>
+              <!--Registration Form-->
+
+            <div class="container mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 bg-secondary pt-5 rounded-3">
+                        <form>
+                            <div class="form-group px-5">
+
+                                <label for="inputName" class="col-sm-2 col-form-label">Username</label>
+                                <input type="Name" class="form-control" id="inputName">
+
+                                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                                <input type="password" class="form-control" id="inputPassword3">
+                
+                                <div class="col-auto mt-4 ">
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                                      <label class="form-check-label " for="autoSizingCheck">
+                                        Remember me
+                                      </label>
+                                    </div>
+                                  </div>
+                                    
+                                    <div class="text-center mt-3">
+                                        <button type="submit" class="btn btn-primary mb-5">Login</button>
+                                    </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div class="col-auto">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-              </form>
+            </div> 
 
 
             <footer>
