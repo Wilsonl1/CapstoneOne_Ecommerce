@@ -1,100 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-       
-        <title>SocksAllure</title>
-    </head>
-    <body>
-        <header>
-            <!--<h1>SocksAllure</h1>-->
-            <!--navbar-->
-        
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">SocksAllure</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
 
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Register.html">Register</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="login.html">Login</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="shop.html">Shop</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="cart.html">Cart</a>
-                            </li>
-                        </ul>
-                    </div>
+    <title>SocksAllure</title>
+    <link rel="icon" type="image/jpg" href="images/socksicon.jpg"><!--added a favicon to the website title-->
+</head>
+
+<body>
+    <header>
+        <!--<h1>SocksAllure</h1>-->
+        <!--navbar-->
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">SocksAllure</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Register.html">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html">Cart</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
+            </div>
+        </nav>
+
+    </header>
 
 
-        <body>
-            
-            
-              <!--Registration Form-->
 
-            <div class="container mt-5">
-                <div class="row justify-content-center">
-                    <div class="col-md-6 bg-secondary pt-5 rounded-3">
-                        <form>
-                            <div class="form-group px-5">
+    <!--Registration Form-->
 
-                                <label for="inputName" class="col-sm-2 col-form-label">Username</label>
-                                <input type="Name" class="form-control" id="inputName">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 pt-5 rounded-5" style="background-color: #F2B705;">
+                <form>
+                    <div class="form-group px-5">
 
-                                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                                <input type="password" class="form-control" id="inputPassword3">
-                
-                                <div class="col-auto mt-4 ">
-                                    <div class="form-check">
-                                      <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-                                      <label class="form-check-label " for="autoSizingCheck">
-                                        Remember me
-                                      </label>
-                                    </div>
-                                  </div>
-                                    
-                                    <div class="text-center mt-3">
-                                        <button type="submit" class="btn btn-primary mb-5">Login</button>
-                                    </div>
+                        <label for="inputName" class="col-sm-2 col-form-label">Username</label>
+                        <input type="text" class="form-control" id="inputName" required>
+
+                        <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword3" required>
+
+                        <div class="col-auto mt-4 ">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                                <label class="form-check-label " for="autoSizingCheck">
+                                    Remember me
+                                </label>
                             </div>
-                        </form>
+                        </div>
+
+                        <div class="text-center mt-3 mb-5">
+                            <button class="text-white text-decoration-none border-0 px-3 py-2 rounded-4 mt-"
+                                style="background-color: #03A678;">
+                                Login
+                            </button>
+                        </div>
                     </div>
-                </div>
-            </div> 
+                </form>
+            </div>
+        </div>
+    </div>
 
 
-            <footer>
-                <p>&copy; Created by Lori Wilson 2023</p>
-            </footer>
-        </body>
-        
+    <footer class="fw-bold mt-4 fs-3">
+        <p>&copy; Created by Lori Wilson 2023</p>
+    </footer>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

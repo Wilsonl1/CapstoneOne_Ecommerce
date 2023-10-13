@@ -1,0 +1,23 @@
+body {
+    background-color: #D90416;
+}
+
+
+.nav {
+    position: fixed;
+}
+
+.hero-container {
+    position: relative;
+}
+
+
+.container.b.border {
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: black;
+}
+
+footer {
+    text-align: center;
+}
